@@ -1,0 +1,37 @@
+{
+  "name": "calendar-date-regex",
+  "description": "Regular expression for matching ISO 8601 calendar dates",
+  "keywords": [
+    "regex",
+    "regexp",
+    "regular-expression",
+    "date",
+    "year",
+    "month",
+    "day",
+    "calendar",
+    "iso",
+    "iso8601"
+  ],
+  "main": "browser.js",
+  "homepage": "https://github.com/shinnn/calendar-date-regex",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/calendar-date-regex.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
