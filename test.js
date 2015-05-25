@@ -1,10 +1,10 @@
 'use strict';
 
-var requireBowerFiles = require('require-bower-files');
-var test = require('tape');
+const requireBowerFiles = require('require-bower-files');
+const test = require('tape');
 
 function runTest(description, main) {
-  test(description, function(t) {
+  test(description, t => {
     t.plan(7);
 
     t.equal(main.name, 'calendarDateRegex', 'should have a function name.');
@@ -46,7 +46,7 @@ function runTest(description, main) {
     );
   });
 
-  test(description + '.noDay', function(t) {
+  test(description + '.noDay', t => {
     t.plan(3);
 
     t.equal(main.noDay.name, 'calendarDateRegexWithoutDay', 'should have a function name.');
@@ -65,7 +65,7 @@ function runTest(description, main) {
   });
 }
 
-runTest('require(\'calendar-date-regex\')', require('./'));
+runTest('require(\'calendar-date-regex\')', require('.'));
 
 global.window = {};
 requireBowerFiles({self: true});
