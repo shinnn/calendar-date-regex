@@ -7,7 +7,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/calendar-date-regex.svg)](https://coveralls.io/r/shinnn/calendar-date-regex)
 [![devDependency Status](https://david-dm.org/shinnn/calendar-date-regex/dev-status.svg)](https://david-dm.org/shinnn/calendar-date-regex#info=devDependencies)
 
-Regular expression for matching [ISO 8601](http://www.iso.org/iso/iso8601) [calendar dates](http://en.wikipedia.org/wiki/ISO_8601#Calendar_dates)
+Regular expression for matching [ISO 8601](http://www.iso.org/iso/iso8601) [calendar dates](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates)
 
 ```javascript
 '2015-01-25 0101 20150126 11112233 2015-13-13'.match(calendarDateRegex());
@@ -33,7 +33,7 @@ bower install calendar-date-regex
 #### [Duo](http://duojs.org/)
 
 ```javascript
-var calendarDateRegex = require('shinnn/calendar-date-regex');
+const calendarDateRegex = require('shinnn/calendar-date-regex');
 ```
 
 ### Standalone
@@ -100,8 +100,8 @@ Return: `RegExp`
 It returns a regular expression object that matches calendar dates with reduced precision (*YYYY-MM*).
 
 ```javascript
-calendarDateRegex().test('2015-01'); //=> true
-calendarDateRegex().test('201501'); //=> false
+calendarDateRegex.noDay().test('2015-01'); //=> true
+calendarDateRegex.noDay().test('201501'); //=> false
 ```
 
 ## License
