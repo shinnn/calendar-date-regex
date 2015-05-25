@@ -3,18 +3,14 @@
   "version": "1.0.0",
   "description": "Regular expression for matching ISO 8601 calendar dates",
   "repository": "shinnn/calendar-date-regex",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js index.js test.js",
     "test": "node test.js | tap-spec",
     "coverage": "istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/shinnn/calendar-date-regex/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -34,8 +30,8 @@
   ],
   "devDependencies": {
     "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.20.0",
-    "istanbul": "^0.3.13",
+    "eslint": "^0.21.2",
+    "istanbul": "^0.3.14",
     "istanbul-coveralls": "^1.0.2",
     "require-bower-files": "^2.0.0",
     "tap-spec": "^3.0.0",
