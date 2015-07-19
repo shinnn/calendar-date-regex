@@ -14,16 +14,14 @@
     "iso8601"
   ],
   "main": "browser.js",
+  "moduleType": "globals",
   "homepage": "https://github.com/shinnn/calendar-date-regex",
   "repository": {
     "type": "git",
     "url": "git://github.com/shinnn/calendar-date-regex.git"
   },
   "authors": [
-    {
-      "name": "Shinnosuke Watanabe",
-      "url": "https://github.com/shinnn"
-    }
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
   ],
   "license": "MIT",
   "ignore": [
