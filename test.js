@@ -1,7 +1,7 @@
-'use strict';
+'use strong';
 
 const requireBowerFiles = require('require-bower-files');
-const test = require('tape');
+const {test} = require('tape');
 
 function runTest(description, main) {
   test(description, t => {
@@ -70,4 +70,4 @@ runTest('require(\'calendar-date-regex\')', require('.'));
 global.window = {};
 requireBowerFiles({self: true});
 
-runTest('window.calendarDateRegex', window.calendarDateRegex);
+runTest('window.calendarDateRegex', global.window.calendarDateRegex);

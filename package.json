@@ -5,9 +5,9 @@
   "repository": "shinnn/calendar-date-regex",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json browser.js index.js test.js",
-    "test": "node --harmony_arrow_functions test.js | tap-spec",
-    "coverage": "node --harmony_arrow_functions node_modules/.bin/istanbul cover test.js",
+    "pretest": "eslint --config @shinnn browser.js index.js test.js",
+    "test": "node --strong_mode --harmony_destructuring test.js | tap-spec",
+    "coverage": "node --strong_mode --harmony_destructuring node_modules/.bin/istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
   "license": "MIT",
@@ -29,12 +29,10 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.21.2",
-    "istanbul": "^0.3.14",
-    "istanbul-coveralls": "^1.0.2",
-    "require-bower-files": "^2.0.0",
-    "tap-spec": "^3.0.0",
-    "tape": "^4.0.0"
+    "eslint": "^1.6.0",
+    "istanbul": "^0.3.22",
+    "require-bower-files": "^3.0.0",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.1"
   }
 }
