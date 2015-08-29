@@ -29,6 +29,7 @@
     "client-side"
   ],
   "devDependencies": {
+    "@shinnn/eslint-config": "^1.1.0",
     "eslint": "^1.6.0",
     "istanbul": "^0.3.22",
     "require-bower-files": "^3.0.0",
