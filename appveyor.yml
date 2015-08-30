@@ -5,5 +5,5 @@ install:
   - ps: Install-Product node 4
   - npm install require-bower-files tape
 build: off
-test_script: node --strong_mode test.js
-cache: node_modules => package.json
+test_script: node --strong_mode --harmony_destructuring --throw-deprecation --track-heap-objects test.js
+cache: node_modules -> package.json
