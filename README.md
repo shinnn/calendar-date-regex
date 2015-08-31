@@ -3,7 +3,6 @@
 [![NPM version](https://img.shields.io/npm/v/calendar-date-regex.svg)](https://www.npmjs.com/package/calendar-date-regex)
 [![Bower version](https://img.shields.io/bower/v/calendar-date-regex.svg)](https://github.com/shinnn/calendar-date-regex/releases)
 [![Build Status](https://travis-ci.org/shinnn/calendar-date-regex.svg?branch=master)](https://travis-ci.org/shinnn/calendar-date-regex)
-[![Build status](https://ci.appveyor.com/api/projects/status/x219btyw95owohiw?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/calendar-date-regex)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/calendar-date-regex.svg)](https://coveralls.io/r/shinnn/calendar-date-regex)
 [![devDependency Status](https://david-dm.org/shinnn/calendar-date-regex/dev-status.svg)](https://david-dm.org/shinnn/calendar-date-regex#info=devDependencies)
 
