@@ -1,4 +1,4 @@
-'use strong';
+'use strict';
 
 const requireBowerFiles = require('require-bower-files');
 const {test} = require('tape');
