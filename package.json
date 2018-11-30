@@ -1,6 +1,6 @@
 {
   "name": "calendar-date-regex",
-  "version": "1.0.2",
+  "version": "2.0.0-0",
   "description": "Regular expression for matching ISO 8601 calendar dates",
   "repository": "shinnn/calendar-date-regex",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
