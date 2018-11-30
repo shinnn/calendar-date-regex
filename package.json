@@ -1,38 +1,45 @@
 {
-  "name": "calendar-date-regex",
-  "version": "2.0.0-0",
-  "description": "Regular expression for matching ISO 8601 calendar dates",
-  "repository": "shinnn/calendar-date-regex",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "pretest": "eslint --fix --config @shinnn browser.js index.js test.js",
-    "test": "node --throw-deprecation --track-heap-objects test.js | tap-spec",
-    "coverage": "istanbul cover test.js"
-  },
-  "license": "MIT",
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "regex",
-    "regexp",
-    "regular-expression",
-    "date",
-    "year",
-    "month",
-    "day",
-    "calendar",
-    "iso",
-    "iso8601",
-    "browser",
-    "client-side"
-  ],
-  "devDependencies": {
-    "@shinnn/eslint-config": "^3.1.0",
-    "eslint": "^3.4.0",
-    "istanbul": "^0.4.5",
-    "require-bower-files": "^3.0.0",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.6.0"
-  }
+	"name": "calendar-date-regex",
+	"version": "2.0.0-0",
+	"description": "Regular expression for matching ISO 8601 calendar dates",
+	"repository": "shinnn/calendar-date-regex",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "MIT",
+	"scripts": {
+		"prebuild": "eslint .",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc node test.js"
+	},
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"keywords": [
+		"regex",
+		"regexp",
+		"regular-expression",
+		"date",
+		"year",
+		"month",
+		"day",
+		"calendar",
+		"iso",
+		"iso8601"
+	],
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.8.2",
+		"eslint": "^5.9.0",
+		"nyc": "^13.1.0",
+		"nyc-config-common": "^1.0.1",
+		"rollup": "^0.67.3",
+		"rollup-config-module": "^2.0.1",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
+	}
 }

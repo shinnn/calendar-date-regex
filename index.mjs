@@ -1,5 +1,3 @@
-'use strict';
-
 /*!
  * calendar-date-regex | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/calendar-date-regex
@@ -10,7 +8,7 @@ var basicFormat = extendedFormat.replace(/-(?=\()/g, '');
 
 var noDay = '(\\d{4})-(0[1-9]|1[012])';
 
-module.exports = function calendarDateRegex(options) {
+export default function calendarDateRegex(options) {
 	options = options || {};
 
 	var patterns = [];
