@@ -1,12 +1,10 @@
 # calendar-date-regex
 
-[![NPM version](https://img.shields.io/npm/v/calendar-date-regex.svg)](https://www.npmjs.com/package/calendar-date-regex)
-[![Bower version](https://img.shields.io/bower/v/calendar-date-regex.svg)](https://github.com/shinnn/calendar-date-regex/releases)
-[![Build Status](https://travis-ci.org/shinnn/calendar-date-regex.svg?branch=master)](https://travis-ci.org/shinnn/calendar-date-regex)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/calendar-date-regex.svg)](https://coveralls.io/r/shinnn/calendar-date-regex)
-[![devDependency Status](https://david-dm.org/shinnn/calendar-date-regex/dev-status.svg)](https://david-dm.org/shinnn/calendar-date-regex#info=devDependencies)
+[![npm version](https://img.shields.io/npm/v/calendar-date-regex.svg)](https://www.npmjs.com/package/calendar-date-regex)
+[![Build Status](https://travis-ci.com/shinnn/calendar-date-regex.svg?branch=master)](https://travis-ci.com/shinnn/calendar-date-regex)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/calendar-date-regex.svg)](https://coveralls.io/github/shinnn/calendar-date-regex)
 
-Regular expression for matching [ISO 8601](http://www.iso.org/iso/iso8601) [calendar dates](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates)
+A regular expression for matching [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) [calendar dates](https://en.wikipedia.org/wiki/ISO_8601#Calendar_dates)
 
 ```javascript
 '2015-01-25 0101 20150126 11112233 2015-13-13'.match(calendarDateRegex());
@@ -15,38 +13,24 @@ Regular expression for matching [ISO 8601](http://www.iso.org/iso/iso8601) [cale
 
 ## Installation
 
-### Package managers
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
-#### [npm](https://www.npmjs.com/)
-
-```sh
+```
 npm install calendar-date-regex
 ```
 
-#### [bower](http://bower.io/)
-
-```sh
-bower install calendar-date-regex
-```
-
-#### [Duo](http://duojs.org/)
+## API
 
 ```javascript
-const calendarDateRegex = require('shinnn/calendar-date-regex');
+import calendarDateRegex from 'calendar-date-regex';
 ```
-
-### Standalone
-
-[Download the script file directly.](https://raw.githubusercontent.com/shinnn/calendar-date-regex/master/browser.js)
-
-## API
 
 ### calendarDateRegex(*options*)
 
 *options*: `Object`  
 Return: `RegExp`
 
-It returns a [regular expression object](http://www.ecma-international.org/ecma-262/5.1/#sec-15.10) that matches calendar dates (*YYYY-MM-DD* and *YYYYMMDD*).
+It returns a [regular expression object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) that matches calendar dates (*YYYY-MM-DD* and *YYYYMMDD*).
 
 ```javascript
 calendarDateRegex().exec('  16140526  ').slice();
@@ -58,7 +42,7 @@ calendarDateRegex().exec('  1614-05-26  ').slice();
 
 #### options.basic
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `true`
 
 `false` prevents the regex from matching the basic format (*YYYYMMDD*).
@@ -69,7 +53,7 @@ calendarDateRegex({basic: false}).test('20130413'); //=> false
 
 #### options.extended
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `true`
 
 `false` prevents the regex from matching the extended format (*YYYY-MM-DD*).
@@ -80,7 +64,7 @@ calendarDateRegex({extended: false}).test('2013-04-13'); //=> false
 
 #### options.exact
 
-Type: `Boolean`  
+Type: `boolean`  
 Default: `false`
 
 `true` makes the regex matches only an exact calendar date string.
@@ -105,6 +89,6 @@ calendarDateRegex.noDay().test('201501'); //=> false
 
 ## License
 
-Copyright (c) 2015 - 2016 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2015 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
